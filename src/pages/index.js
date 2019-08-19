@@ -77,13 +77,13 @@ export default Index
 
 export const query = graphql`
   {
-    bg: file(relativePath: { eq: "sb-bg.webp" }) {
+    bg: file(relativePath: { eq: "sb-bg.jpg" }) {
       childImageSharp {
         fluid(
           quality: 100
           duotone: { highlight: "#f5dfc4", shadow: "#214f3a" }
         ) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid
         }
       }
     }
