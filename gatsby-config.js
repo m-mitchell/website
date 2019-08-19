@@ -19,15 +19,5 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: { name: 'images', path: `${__dirname}/src/images` },
     },
-    {
-      resolve: 'gatsby-plugin-purgecss',
-      options: {
-        develop: true,
-        ignore: ['tachyons'],
-        printAll: true,
-        printRejected: true,
-        whitelistPatternsChildren: [/^content$/],
-      },
-    },
   ],
 }
