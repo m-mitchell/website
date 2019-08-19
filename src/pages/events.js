@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react'
+import React from 'react'
 
 import Events from '../components/Events'
 import A from '../components/ExtLink'
@@ -30,9 +30,7 @@ const EventsPage = () => (
     </Hero>
 
     <Hero>
-      <Suspense fallback={<p className="gray mb7">Loading...</p>}>
-        <Events all />
-      </Suspense>
+      <Events all />
     </Hero>
   </Layout>
 )

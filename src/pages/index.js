@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby'
 import BgImg from 'gatsby-background-image'
-import React, { Suspense } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
 import Events from '../components/Events'
@@ -39,10 +39,7 @@ const Index = ({ data }) => {
 
       <Hero>
         <div className="f6 mb4 tracked">NEXT EVENT</div>
-
-        <Suspense fallback={<p className="gray mb7">Loading...</p>}>
-          <Events />
-        </Suspense>
+        <Events />
       </Hero>
 
       <Hero outerClassName="bg-dark-green tc white">
