@@ -1,0 +1,45 @@
+[
+  {
+    "name": "Blogs",
+    "links": [
+      {
+        "description": "DEV Community",
+        "link": "https://dev.to/surabayajs"
+      },
+      {
+        "description": "Medium",
+        "link": "https://medium.com/surabayajs"
+      }
+    ]
+  },
+  {
+    "name": "Development",
+    "links": [
+      {
+        "description": "GitHub",
+        "link": "https://github.com/SurabayaJS"
+      },
+      {
+        "description": "ZEIT",
+        "link": "https://zeit.co/surabayajs"
+      }
+    ]
+  },
+  {
+    "name": "Social",
+    "links": [
+      {
+        "description": "Eventbrite",
+        "link": "https://surabayajs.eventbrite.com"
+      },
+      {
+        "description": "Telegram",
+        "link": "https://t.me/surabayajs"
+      },
+      {
+        "description": "Twitter",
+        "link": "https://twitter.com/surabaya_js"
+      }
+    ]
+  }
+]
