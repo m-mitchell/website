@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap');
+
+html, body, .sans-serif {
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont,
+    'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial,
+    sans-serif !important;
+}
