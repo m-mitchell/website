@@ -37,6 +37,7 @@ const Index = ({ data }) => {
         </Hero>
       </StyledDiv>
 
+        <Events reverse />
       <Hero>
         <div className="f6 mb4 tracked">NEXT EVENT</div>
         <Events />

@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react'
 
 import Event from '../components/Event'
 
-const Events = ({ all = false, sortByOld = false }) => {
+const Events = ({ all = false, reverse = false }) => {
   let loaded = false
   const [events, setEvents] = useState([])
+
   useEffect(() => {
     ;(async () => {
       if (typeof window !== 'undefined') {
@@ -19,7 +20,7 @@ const Events = ({ all = false, sortByOld = false }) => {
     events.reduce(
       (acc, e) =>
         e.Status === 'Scheduled' || all
-          ? sortByOld
+          ? reverse
             ? [<Event key={e.Name} event={e} />, ...acc]
             : [...acc, <Event key={e.Name} event={e} />]
           : acc,
