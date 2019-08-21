@@ -1,0 +1,27 @@
+[
+  {
+    "image": "friends-01-surabayadev.jpg",
+    "name": "SurabayaDev",
+    "url": "https://surabayadev.org"
+  },
+  {
+    "image": "friends-02-sidoarjodev.jpg",
+    "name": "SidoarjoDev",
+    "url": "https://t.me/sidoarjodev"
+  },
+  {
+    "image": "friends-03-reactjs.id.jpg",
+    "name": "ReactJS ID",
+    "url": "https://reactjs.id"
+  },
+  {
+    "image": "friends-04-laravel-indonesia.jpg",
+    "name": "Laravel Indonesia",
+    "url": "https://t.me/laravelindonesia"
+  },
+  {
+    "image": "friends-05-vuejs-indonesia.jpg",
+    "name": "VueJS Indonesia",
+    "url": "https://t.me/vuejsid"
+  }
+]
