@@ -41,7 +41,7 @@ const Index = ({ data }) => {
 
       <Hero className="pt4">
         <div className="f6 mb4 tc tracked">UPCOMING EVENTS</div>
-        <Events reverse />
+        <Events reverse fallbackClassName="tc" />
       </Hero>
 
       <Hero>
