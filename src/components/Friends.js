@@ -1,17 +1,7 @@
 import { graphql, useStaticQuery } from 'gatsby'
-import Img from 'gatsby-image'
 import React from 'react'
-import styled from 'styled-components'
 
-import ExtLink from '../components/ExtLink'
-
-const A = styled(ExtLink)`
-  width: 8rem;
-`
-
-const Icon = styled(Img)`
-  width: 8rem;
-`
+import IconList from './IconList'
 
 const Friends = () => {
   const data = useStaticQuery(graphql`
@@ -42,22 +32,7 @@ const Friends = () => {
     }
   `)
 
-  const meta = data.meta.edges.map(({ node }) => node)
-
-  return (
-    <div className="flex flex-wrap justify-center tc">
-      {data.imgs.edges.map(({ node }, idx) => (
-        <A key={node.id} href={meta[idx].url} className="ma4" noDim>
-          <Icon
-            fluid={node.childImageSharp.fluid}
-            className="ba b--light-gray dim br-100"
-          />
-          <br />
-          <small className="dark-green">{meta[idx].name}</small>
-        </A>
-      ))}
-    </div>
-  )
+  return <IconList bordered showText {...data} />
 }
 
 export default Friends

@@ -1,17 +1,7 @@
 import { graphql, useStaticQuery } from 'gatsby'
-import Img from 'gatsby-image'
 import React from 'react'
-import styled from 'styled-components'
 
-import ExtLink from '../components/ExtLink'
-
-const A = styled(ExtLink)`
-  width: 8rem;
-`
-
-const Icon = styled(Img)`
-  width: 8rem;
-`
+import IconList from './IconList'
 
 const Supporters = () => {
   const data = useStaticQuery(graphql`
@@ -42,19 +32,7 @@ const Supporters = () => {
     }
   `)
 
-  const meta = data.meta.edges.map(({ node }) => node)
-
-  return (
-    <div className="flex flex-wrap items-center justify-center tc">
-      {data.imgs.edges.map(({ node }, idx) => (
-        <A key={node.id} href={meta[idx].url} className="hide-child ma4" noDim>
-          <Icon fluid={node.childImageSharp.fluid} className="dim" />
-          <br />
-          <small className="child dark-green">{meta[idx].name}</small>
-        </A>
-      ))}
-    </div>
-  )
+  return <IconList {...data} />
 }
 
 export default Supporters
