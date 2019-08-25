@@ -1,7 +1,6 @@
 import { graphql } from 'gatsby'
 import React from 'react'
 
-import Ellipsis from '../components/Ellipsis'
 import A from '../components/ExtLink'
 import Head from '../components/Head'
 import Header from '../components/Header'
@@ -44,8 +43,6 @@ const Community = ({ data }) => {
             </A>
             .
           </p>
-
-          <Ellipsis />
 
           <p>{list}</p>
         </div>
