@@ -40,7 +40,6 @@ const Index = ({ data }) => {
       </StyledDiv>
 
       <Hero className="pt4">
-        <div className="f6 mb4 tc tracked">UPCOMING EVENTS</div>
         <Events reverse fallbackClassName="tc" />
       </Hero>
 
