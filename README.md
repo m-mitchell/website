@@ -12,3 +12,11 @@ Made with [Tachyons](https://tachyons.io) and [Gatsby.js](https://gatsbyjs.org).
 Source code licensed under the [MIT License](./LICENSE).
 
 </div>
+
+# Contributing
+
+The canonical repository for this project can be found at [SurabayaJS/website](https://github.com/SurabayaJS/website) on Github.
+
+# Development
+
+To set up and start the development server, run `yarn install && yarn develop`.
